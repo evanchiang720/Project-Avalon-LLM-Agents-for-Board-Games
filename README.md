@@ -1,3 +1,40 @@
+# 🛡️ Avalon-LLM-DPO: Optimizing Strategic Social Deduction Agents with Limited Data and DPO
+
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
+[![TRL](https://img.shields.io/badge/TRL-DPO%20%26%20SFT-green.svg)](https://github.com/huggingface/trl)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> **Evaluation of Small Models Trained with Limited Data for *The Resistance: Avalon***  
+> **Advisor**: Prof. I-Chen Wu  
+> **Team**: Chia-Tung Chiang, Si-Kai Zhang
+
+---
+
+## 📖 Introduction
+
+*The Resistance: Avalon* is a complex hidden-role social deduction board game requiring strategic deception, belief revision, and multi-agent coordination. While massive frontier models perform well in such environments, running them is computationally expensive.
+
+This project investigates **how to train small-parameter language models (e.g., Qwen-4B) to play Avalon effectively under scarce human gameplay data and constrained resources.** 
+
+### Key Contributions
+* **Synthetic Data & CoT Enrichment**: Overcame data scarcity by synthesizing game logs using larger LLMs and injecting internal **Chain-of-Thought (CoT)** reasoning into historical dialogues.
+* **Persona & Embedding-driven Preference Pairs**: Sampled diverse actions across **12 distinct player personas**, filtered via text embedding distances, and ranked by a fine-tuned **30B LLM-as-a-Judge** to construct high-quality `(chosen, rejected)` pairs.
+* **Direct Preference Optimization (DPO)**: Applied DPO with LoRA and FlashAttention-2, boosting winning rates by **nearly 2x** and significantly lowering hallucination rates without requiring a reinforcement learning reward model.
+
+---
+
+## 🏛️ Pipeline Architecture
+
+The overall framework follows a three-stage pipeline:
+
+```
+[Phase 0: SFT] ───────────────► [Phase 1: Preference Generation] ────────► [Phase 2: DPO]
+• 20 Human + 100 Synthetic Logs  • 12 Diverse Personas               • Target: Qwen3-4B
+• CoT Injection (Thought + Speech)• Embedding Diversity Selection     • FlashAttention-2
+• Trained 30B Judge & 4B Base    • 30B Model Trust Scoring (Chosen/Rej)• LoRA (r=64, a=128)
+```
+
 1. **Phase 0 (SFT)**: 
    - Supervised fine-tuning of `Qwen3-4B` and `Qwen3-30B-A3B` on dialogue logs with human game data weighted 3x.
 2. **Phase 1 (Data Generation)**: 
@@ -79,3 +116,59 @@ avalon-llm-dpo/
 │       └── benchmark_scenarios.py  # Checkpoint verification across classic dilemmas
 ├── .gitignore
 └── README.md
+```
+
+---
+
+## 🚀 Quick Start
+
+### 1. Installation
+```bash
+git clone https://github.com/<your-username>/avalon-llm-dpo.git
+cd avalon-llm-dpo
+pip install -r requirements.txt
+```
+
+### 2. Training
+#### Stage 1: SFT Target Model
+```bash
+python src/training/train_4b_player_sft.py
+```
+
+#### Stage 2: DPO Alignment (Optimized for FlashAttention-2 & bfloat16)
+```bash
+python src/training/train_dpo.py \
+    --sft_model_path ./qwen_4b_sft \
+    --dataset_path data/avalon_dpo_final.jsonl \
+    --output_dir ./qwen_4b_dpo_final \
+    --lora_r 64 \
+    --lora_alpha 128
+```
+
+### 3. Running Multi-Agent Game Arena
+Launch a local OpenAI-compatible inference server (e.g., vLLM):
+```bash
+vllm serve ./qwen_4b_dpo_final --port 8001
+```
+Simulate live 6-player matches:
+```bash
+python src/arena/run_avalon.py
+```
+
+### 4. Evaluation
+Aggregate DeepEval evaluation statistics:
+```bash
+python src/eval/calc_scores.py
+```
+Score model outputs using Gemini as an automated judge:
+```bash
+export GEMINI_API_KEY="your_api_key"
+python src/eval/evaluate_llm_judge.py --input_folder eval_results/sft --model gemini-1.5-flash
+```
+
+---
+
+## 📜 References
+* [1] *Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models* (arXiv:2311.05720)
+* [2] *AvalonBench: Evaluating LLMs Playing the Game of Avalon* (arXiv:2310.05036)
+* [3] *Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization* (arXiv:2502.04686)
