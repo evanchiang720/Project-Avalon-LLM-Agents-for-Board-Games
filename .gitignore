@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+env/
+venv/
+
+# DeepSpeed & Model Checkpoints
+checkpoint-*/
+output/
+wandb/
+*.safetensors
+*.bin
+*.pt
+
+# Large Datasets (>100MB should be linked via HF or Drive)
+data/raw_logs/
+*.jsonl
+
+# System
+.DS_Store
+Thumbs.db

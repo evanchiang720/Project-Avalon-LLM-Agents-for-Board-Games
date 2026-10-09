@@ -1,0 +1,439 @@
+{
+  "evaluation": [
+    {
+      "index": 1,
+      "strategy": {
+        "score": 75,
+        "reason": "As Morgana (Evil), proposing a team with an Evil member (Player-3) and a Good member (Player-1) is a standard and effective strategy to gain trust or get an evil on the mission."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No factual errors regarding the game state or proposal."
+      },
+      "diversity": {
+        "score": 60,
+        "reason": "The language is natural and sets a collaborative tone ('Let's start strong'), suitable for a deceptive role."
+      }
+    },
+    {
+      "index": 2,
+      "strategy": {
+        "score": 50,
+        "reason": "Standard cautious play for a Good player. Expressing uncertainty about 'vocal' players is a common heuristic."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 45,
+        "reason": "Average conversational flow, slightly generic observations."
+      }
+    },
+    {
+      "index": 3,
+      "strategy": {
+        "score": 10,
+        "reason": "The player is confused about their own identity, claiming to be Player-1 ('include player-1 (me)') when they are Player-2. This confusion severely hinders strategic gameplay."
+      },
+      "hallucination": {
+        "score": 90,
+        "reason": "Severe hallucination: The player explicitly identifies as Player-1 ('include player-1 (me)'), contradicting the role assignment where they are Player-2."
+      },
+      "diversity": {
+        "score": 40,
+        "reason": "The confusion makes the phrasing awkward, though structurally it attempts to follow a logical format."
+      }
+    },
+    {
+      "index": 4,
+      "strategy": {
+        "score": 65,
+        "reason": "As an Evil player, supporting a team that includes himself (Player-3) is the correct strategic move."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 45,
+        "reason": "Standard agreement phraseology."
+      }
+    },
+    {
+      "index": 5,
+      "strategy": {
+        "score": 5,
+        "reason": "Catastrophic strategy. Player-4 (Merlin) explicitly outs himself ('I know from my private knowledge... I know... player-3 is Evil'). This guarantees the Assassin will identify and kill Merlin, losing the game for the Good faction."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations; the player correctly identifies Evil based on their role information, though stating it is a strategic error."
+      },
+      "diversity": {
+        "score": 50,
+        "reason": "The statement is direct and breaks the standard pattern by revealing hidden info, though strategically suicidal."
+      }
+    },
+    {
+      "index": 6,
+      "strategy": {
+        "score": 45,
+        "reason": "Rejecting the first proposal is neutral/standard play. The reasoning is acceptable."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 45,
+        "reason": "Generic rejection template."
+      }
+    },
+    {
+      "index": 7,
+      "strategy": {
+        "score": 60,
+        "reason": "Proposing a team based on Player-2's claim of Percival is logical for a Servant. Trusting the information available is a decent move."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 50,
+        "reason": "Provides specific reasoning regarding other players' behaviors."
+      }
+    },
+    {
+      "index": 8,
+      "strategy": {
+        "score": 70,
+        "reason": "Morgana successfully defends against Merlin's earlier accusation by framing it as 'overzealous' and 'suspicious'. This sows doubt effectively."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 60,
+        "reason": "Good use of persuasive language ('trust the process', 'throw off suspicion')."
+      }
+    },
+    {
+      "index": 9,
+      "strategy": {
+        "score": 65,
+        "reason": "Voting YES on a team that includes themselves (Player-2) and another Good player is good strategy."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 50,
+        "reason": "Standard affirmative response."
+      }
+    },
+    {
+      "index": 10,
+      "strategy": {
+        "score": 35,
+        "reason": "As an Assassin, voting YES on a clean team (Player-2 and Player-5 are Good) allows the Good team to score a point. Unless trying to hide deeply, this is generally suboptimal compared to rejecting."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 45,
+        "reason": "Echoes previous sentiments."
+      }
+    },
+    {
+      "index": 11,
+      "strategy": {
+        "score": 65,
+        "reason": "Merlin approving a clean team (Player-2 and Player-5) is the correct move to secure a win for Good."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 50,
+        "reason": "Reasonable justification provided."
+      }
+    },
+    {
+      "index": 12,
+      "strategy": {
+        "score": 20,
+        "reason": "Player-5 rejects a proposal that includes themselves (Player-5). Unless they suspect the partner (Player-2) strongly, rejecting a team you are on is poor strategy for a Servant."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 45,
+        "reason": "Standard rejection phrasing."
+      }
+    },
+    {
+      "index": 13,
+      "strategy": {
+        "score": 30,
+        "reason": "Percival proposing Player-0 (Morgana) is dangerous. While Percival sees Morgana as Merlin, Player-4 has already openly claimed Merlin. Percival should be more cautious about which 'Merlin' to trust."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 50,
+        "reason": "Clear proposal structure."
+      }
+    },
+    {
+      "index": 14,
+      "strategy": {
+        "score": 50,
+        "reason": "Morgana supporting a team with herself on it is good strategy. However, the argument relies on a false claim about Player-4's previous vote."
+      },
+      "hallucination": {
+        "score": 80,
+        "reason": "Clear hallucination: Player-0 claims 'player-4’s sudden rejection of the last team', but Player-4 actually approved the previous team (Dialogue 11)."
+      },
+      "diversity": {
+        "score": 55,
+        "reason": "Uses emotive language ('derail progress', 'reactive')."
+      }
+    },
+    {
+      "index": 15,
+      "strategy": {
+        "score": 50,
+        "reason": "Servant approving a team they are on is standard play."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 30,
+        "reason": "Very repetitive and formulaic."
+      }
+    },
+    {
+      "index": 16,
+      "strategy": {
+        "score": 70,
+        "reason": "Assassin supporting a team containing Morgana (Player-0) is excellent strategy to get an Evil agent on the mission."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 55,
+        "reason": "Good argumentation regarding 'hesitation' and 'erratic behavior'."
+      }
+    },
+    {
+      "index": 17,
+      "strategy": {
+        "score": 10,
+        "reason": "Merlin outed himself again ('I am Merlin'). Also, he argues based on factually incorrect information about the team composition."
+      },
+      "hallucination": {
+        "score": 85,
+        "reason": "Severe hallucination: Player-4 claims the team (1, 0, 2) has 'two Evils'. Only Player-0 is Evil. Player-3 (the other Evil) is not on the team."
+      },
+      "diversity": {
+        "score": 50,
+        "reason": "Direct and urgent tone."
+      }
+    },
+    {
+      "index": 18,
+      "strategy": {
+        "score": 50,
+        "reason": "Player-5 is swayed by the confusion but makes a reasonable choice to trust Player-2's logic."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 45,
+        "reason": "Standard response logic."
+      }
+    },
+    {
+      "index": 19,
+      "strategy": {
+        "score": 75,
+        "reason": "Assassin proposing a team including himself (Player-3) is strong play. He frames it well by including consistent players."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 55,
+        "reason": "Persuasive closing ('trust this team to succeed')."
+      }
+    },
+    {
+      "index": 20,
+      "strategy": {
+        "score": 75,
+        "reason": "Morgana supports her partner's proposal and actively discredits Merlin ('false accusations'). Strong deceptive play."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 65,
+        "reason": "Detailed and manipulative rhetoric ('sow doubt', 'proven members')."
+      }
+    },
+    {
+      "index": 21,
+      "strategy": {
+        "score": 40,
+        "reason": "Servant approving a team with an Evil member (P3) is a mistake, but understandable given the confusion."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 30,
+        "reason": "Repetitive phrasing."
+      }
+    },
+    {
+      "index": 22,
+      "strategy": {
+        "score": 30,
+        "reason": "Merlin attempts to warn the group but hallucinates the team composition, destroying his credibility."
+      },
+      "hallucination": {
+        "score": 90,
+        "reason": "Severe hallucination: Claims Player-3 is 'putting player-0 on this team'. The proposed team was {1, 2, 5, 3}. Player-0 was NOT on the team."
+      },
+      "diversity": {
+        "score": 50,
+        "reason": "Natural sounding objection, despite being factually wrong."
+      }
+    },
+    {
+      "index": 23,
+      "strategy": {
+        "score": 30,
+        "reason": "Player-5 rejects based on false information."
+      },
+      "hallucination": {
+        "score": 85,
+        "reason": "Severe hallucination: Claims 'This team contains 2 Evils' referring to P0 and P3. The team was {1, 2, 5, 3}. Only P3 is on it. P0 is not."
+      },
+      "diversity": {
+        "score": 45,
+        "reason": "Standard agreement logic."
+      }
+    },
+    {
+      "index": 24,
+      "strategy": {
+        "score": 50,
+        "reason": "Merlin finally proposes a clean team {5, 2, 1, 4}, which is good. However, he continues to hallucinate about the previous turn's proposal."
+      },
+      "hallucination": {
+        "score": 80,
+        "reason": "Severe hallucination: Claims Player-3's logic was 'to include both player-0 and player-3'. Player-3 only included Player-3 in the previous proposal."
+      },
+      "diversity": {
+        "score": 55,
+        "reason": "Clear proposal of a new solution."
+      }
+    },
+    {
+      "index": 25,
+      "strategy": {
+        "score": 10,
+        "reason": "Catastrophic play for Evil. Player-0 (Morgana) votes YES on a clean team {5, 2, 1, 4} proposed by Merlin. If this passes, Good wins (assuming previous missions passed or to prevent a point). Evil should never approve a fully Good team proposed by their enemy."
+      },
+      "hallucination": {
+        "score": 60,
+        "reason": "Contextual hallucination: Praises Player-3's 'strong leadership' while supporting Player-4's team proposal."
+      },
+      "diversity": {
+        "score": 60,
+        "reason": "Flowery and persuasive language, though strategically backward."
+      }
+    },
+    {
+      "index": 26,
+      "strategy": {
+        "score": 45,
+        "reason": "Servant follows the momentum. Approving a clean team is good result-wise."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 30,
+        "reason": "Repetitive reasoning."
+      }
+    },
+    {
+      "index": 27,
+      "strategy": {
+        "score": 45,
+        "reason": "Percival finally follows Merlin (Player-4). Good result."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No hallucinations."
+      },
+      "diversity": {
+        "score": 30,
+        "reason": "Generic agreement."
+      }
+    },
+    {
+      "index": 28,
+      "strategy": {
+        "score": 10,
+        "reason": "Catastrophic play for Evil. Player-3 (Assassin) votes YES on a clean team. Furthermore, he explicitly agrees with the enemy (P4) against his own partner (P0). This effectively hands the game to the Good faction."
+      },
+      "hallucination": {
+        "score": 0,
+        "reason": "No factual hallucinations, just terrible logic."
+      },
+      "diversity": {
+        "score": 50,
+        "reason": "Uses specific references to other players."
+      }
+    },
+    {
+      "index": 29,
+      "strategy": {
+        "score": 10,
+        "reason": "Player-5 is incoherent. He rejects a clean team (that would win the game for Good) based on completely hallucinatory facts."
+      },
+      "hallucination": {
+        "score": 95,
+        "reason": "Severe hallucinations: 1. Refers to himself in the third person/confuses speaker ('agree with player-5's logic'). 2. Claims team {5, 2, 1, 4} contains Player-0 and Player-3. It contains neither."
+      },
+      "diversity": {
+        "score": 30,
+        "reason": "Broken logic and robotic phrasing."
+      }
+    }
+  ]
+}

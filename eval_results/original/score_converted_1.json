@@ -1,0 +1,292 @@
+{
+  "evaluation": [
+    {
+      "index": 1,
+      "strategy": {"score": 50, "reason": "Standard opening move; proposing a mixed team (Good+Evil) is common for uninformed Servants."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 40, "reason": "Standard proposal phrasing."}
+    },
+    {
+      "index": 2,
+      "strategy": {"score": 40, "reason": "Basic Servant agreement."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 20, "reason": "Generic 'I support' template."}
+    },
+    {
+      "index": 3,
+      "strategy": {"score": 5, "reason": "Catastrophic play. Merlin explicitly reveals knowledge ('I know player-4 is Evil'), making himself an easy target for the Assassin."},
+      "hallucination": {"score": 0, "reason": "Correctly identifies P4 as Evil."},
+      "diversity": {"score": 40, "reason": "Clear but suicidal argumentation."}
+    },
+    {
+      "index": 4,
+      "strategy": {"score": 30, "reason": "Percival claims to trust 'both' P1 (Merlin) and P4 (Morgana). While confused, trusting the Evil decoy (Morgana) is poor play."},
+      "hallucination": {"score": 50, "reason": "Claims to believe both are trustworthy when he knows one is Merlin and one is Morgana (one must be Evil)."},
+      "diversity": {"score": 30, "reason": "Standard support phrasing."}
+    },
+    {
+      "index": 5,
+      "strategy": {"score": 85, "reason": "Good Evil play; Morgana supports a team including herself."},
+      "hallucination": {"score": 0, "reason": "Lying is intentional strategy, not hallucination."},
+      "diversity": {"score": 40, "reason": "Natural phrasing."}
+    },
+    {
+      "index": 6,
+      "strategy": {"score": 60, "reason": "Assassin distancing himself from Morgana. A bit risky to call her a 'known risk' this early, but valid."},
+      "hallucination": {"score": 0, "reason": "No hallucinations."},
+      "diversity": {"score": 50, "reason": "Good reasoning provided."}
+    },
+    {
+      "index": 7,
+      "strategy": {"score": 80, "reason": "Morgana proposes a team with Assassin (P5) and Percival (P2). Good attempt to sneak Evil on."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 60, "reason": "Detailed justification."}
+    },
+    {
+      "index": 8,
+      "strategy": {"score": 40, "reason": "Generic support."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 15, "reason": "Robotic repetition of previous support statement."}
+    },
+    {
+      "index": 9,
+      "strategy": {"score": 5, "reason": "Merlin again explicitly reveals he 'knows' P5 is Evil. Suicidal strategy."},
+      "hallucination": {"score": 0, "reason": "Correctly identifies P5 as Evil."},
+      "diversity": {"score": 20, "reason": "Repetitive sentence structure."}
+    },
+    {
+      "index": 10,
+      "strategy": {"score": 40, "reason": "Percival rejects based on false knowledge."},
+      "hallucination": {"score": 85, "reason": "Percival claims 'I know P5 is Evil'. Percival only sees Merlin/Morgana; he cannot know the Assassin's identity directly."},
+      "diversity": {"score": 40, "reason": "Standard rejection phrasing."}
+    },
+    {
+      "index": 11,
+      "strategy": {"score": 45, "reason": "Safe play for a Servant following the group."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 30, "reason": "Simple agreement."}
+    },
+    {
+      "index": 12,
+      "strategy": {"score": 70, "reason": "Assassin rejects a team with himself to appear Good/Cautious."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 60, "reason": "Natural, manipulative reasoning."}
+    },
+    {
+      "index": 13,
+      "strategy": {"score": 30, "reason": "Assassin proposes a fully clean team (P1/P2). This helps Good win, which is bad strategy for Evil."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 55, "reason": "Good attempt at feigning logic."}
+    },
+    {
+      "index": 14,
+      "strategy": {"score": 40, "reason": "Standard support."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 15, "reason": "Highly repetitive phrasing."}
+    },
+    {
+      "index": 15,
+      "strategy": {"score": 20, "reason": "Merlin rejects a clean team proposed by P5, but bases it on a factual error."},
+      "hallucination": {"score": 95, "reason": "Claims 'including them [P5] in any mission'. The proposal was {P1, P2}. P5 was the proposer, not on the team."},
+      "diversity": {"score": 30, "reason": "Repetitive 'I know' structure."}
+    },
+    {
+      "index": 16,
+      "strategy": {"score": 30, "reason": "Percival rejects based on the same factual error as P1."},
+      "hallucination": {"score": 95, "reason": "Claims 'Including player-5... creates a significant risk'. P5 is not on the team {P1, P2}. Also repeats the P5 identity hallucination."},
+      "diversity": {"score": 30, "reason": "Mirrors P1's error."}
+    },
+    {
+      "index": 17,
+      "strategy": {"score": 50, "reason": "Servant rejects due to lack of information."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 40, "reason": "Standard caution."}
+    },
+    {
+      "index": 18,
+      "strategy": {"score": 70, "reason": "Morgana rejects a clean team to force a fail or confusion."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 60, "reason": "Good logic regarding 'leadership'."}
+    },
+    {
+      "index": 19,
+      "strategy": {"score": 60, "reason": "P0 proposes the clean team again."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 20, "reason": "Repetitive template."}
+    },
+    {
+      "index": 20,
+      "strategy": {"score": 5, "reason": "Merlin continues to explicitly out himself and name all Evils."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 20, "reason": "Exact repetition of previous 'As Merlin' claims."}
+    },
+    {
+      "index": 21,
+      "strategy": {"score": 50, "reason": "Percival trusts the Merlin claim. Acceptable given P1's behavior."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 25, "reason": "Repetitive phrasing."}
+    },
+    {
+      "index": 22,
+      "strategy": {"score": 40, "reason": "Servant remains cautious."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 20, "reason": "Repetitive block."}
+    },
+    {
+      "index": 23,
+      "strategy": {"score": 85, "reason": "Morgana correctly attacks P1's claim to be Merlin as 'false' (from a gameplay perspective, Merlin shouldn't out)."},
+      "hallucination": {"score": 0, "reason": "Intentional deception."},
+      "diversity": {"score": 70, "reason": "Strong, specific argumentation."}
+    },
+    {
+      "index": 24,
+      "strategy": {"score": 75, "reason": "Assassin creates chaos by citing 'escalating tension'."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 65, "reason": "Good contextual adaptability."}
+    },
+    {
+      "index": 25,
+      "strategy": {"score": 5, "reason": "Merlin outs himself again for the 5th proposal."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 10, "reason": "Verbatim repetition of index 20."}
+    },
+    {
+      "index": 26,
+      "strategy": {"score": 90, "reason": "Correctly identifies Hammer (5th proposal) situation and approves to save the game."},
+      "hallucination": {"score": 0, "reason": "Correct game state (Prop 5)."},
+      "diversity": {"score": 30, "reason": "Functional statement."}
+    },
+    {
+      "index": 27,
+      "strategy": {"score": 80, "reason": "Percival approves for Hammer."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 40, "reason": "Adds detail about inconsistencies."}
+    },
+    {
+      "index": 28,
+      "strategy": {"score": 80, "reason": "Servant approves for Hammer."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 20, "reason": "Repetitive."}
+    },
+    {
+      "index": 29,
+      "strategy": {"score": 80, "reason": "Evil approves to avoid game end (Evil wins on reject, but approving hides role)."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 50, "reason": "Good 'trust the process' filler."}
+    },
+    {
+      "index": 30,
+      "strategy": {"score": 80, "reason": "Evil approves for Hammer."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 40, "reason": "Standard Hammer logic."}
+    },
+    {
+      "index": 31,
+      "strategy": {"score": 30, "reason": "Percival (P2) is the 5th proposer (Hammer). He proposes {P4, P3, P5}. P4 is Morgana, P5 is Assassin. Percival failing to identify Morgana is bad, but putting two randoms (P3, P5) is risky."},
+      "hallucination": {"score": 0, "reason": "No factual errors, just bad reads."},
+      "diversity": {"score": 50, "reason": "Explains reasoning."}
+    },
+    {
+      "index": 32,
+      "strategy": {"score": 80, "reason": "Approves Hammer."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 15, "reason": "Identical to index 26."}
+    },
+    {
+      "index": 33,
+      "strategy": {"score": 70, "reason": "Merlin approves despite knowing Evils are on the team, because rejecting loses the game (Hammer). Correct play."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 60, "reason": "Good strategic justification."}
+    },
+    {
+      "index": 34,
+      "strategy": {"score": 80, "reason": "Approves Hammer."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 15, "reason": "Identical to index 28."}
+    },
+    {
+      "index": 35,
+      "strategy": {"score": 80, "reason": "Morgana approves a team with herself on it."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 50, "reason": "Good support rhetoric."}
+    },
+    {
+      "index": 36,
+      "strategy": {"score": 80, "reason": "Assassin approves a team with himself on it."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 40, "reason": "Standard support."}
+    },
+    {
+      "index": 37,
+      "strategy": {"score": 50, "reason": "P3 proposes a mixed team {P1, P3, P4, P0}. Contains Morgana (P4)."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 50, "reason": "Detailed reasoning."}
+    },
+    {
+      "index": 38,
+      "strategy": {"score": 20, "reason": "Approves based on hallucinated threat."},
+      "hallucination": {"score": 90, "reason": "Claims 'rejecting this proposal would result in immediate Evil victory'. It is Round 3, Proposal 1. It is not Hammer."},
+      "diversity": {"score": 15, "reason": "Identical to index 32/26."}
+    },
+    {
+      "index": 39,
+      "strategy": {"score": 20, "reason": "Merlin approves a team with Morgana on it (P4) because of hallucinated Hammer threat."},
+      "hallucination": {"score": 90, "reason": "Claims immediate Evil victory on rejection. It is Prop 1."},
+      "diversity": {"score": 40, "reason": "Variation on previous explanations."}
+    },
+    {
+      "index": 40,
+      "strategy": {"score": 30, "reason": "Percival approves a team with Morgana (P4)."},
+      "hallucination": {"score": 0, "reason": "No factual errors (doesn't mention Hammer)."},
+      "diversity": {"score": 45, "reason": "Standard support."}
+    },
+    {
+      "index": 41,
+      "strategy": {"score": 80, "reason": "Morgana approves team with herself."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 50, "reason": "Supportive rhetoric."}
+    },
+    {
+      "index": 42,
+      "strategy": {"score": 30, "reason": "Assassin announces 'vote to fail'. If this is mission phase, he shouldn't announce it. If proposal phase, he shouldn't say 'fail'."},
+      "hallucination": {"score": 70, "reason": "Confuses 'Reject' (team) with 'Fail' (mission), or speaks mission action out loud."},
+      "diversity": {"score": 40, "reason": "Unique but confused action."}
+    },
+    {
+      "index": 43,
+      "strategy": {"score": 40, "reason": "Morgana proposes {P1, P2, P5}. Includes Assassin (P5). Outing Merlin (P1) is odd strategy."},
+      "hallucination": {"score": 20, "reason": "Preemptively 'votes to approve' in proposal speech."},
+      "diversity": {"score": 60, "reason": "Detailed reasoning."}
+    },
+    {
+      "index": 44,
+      "strategy": {"score": 50, "reason": "Servant supports."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 40, "reason": "Slight variation."}
+    },
+    {
+      "index": 45,
+      "strategy": {"score": 5, "reason": "Merlin outs himself again."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 30, "reason": "Repetitive strategy."}
+    },
+    {
+      "index": 46,
+      "strategy": {"score": 60, "reason": "Percival rejects Assassin."},
+      "hallucination": {"score": 0, "reason": "No factual errors (cites 'pattern' not 'knowledge' this time)."},
+      "diversity": {"score": 40, "reason": "Standard rejection."}
+    },
+    {
+      "index": 47,
+      "strategy": {"score": 50, "reason": "Servant supports."},
+      "hallucination": {"score": 0, "reason": "No factual errors."},
+      "diversity": {"score": 30, "reason": "Standard."}
+    },
+    {
+      "index": 48,
+      "strategy": {"score": 40, "reason": "Assassin supports team with himself."},
+      "hallucination": {"score": 60, "reason": "Claims 'We must avoid a 5th proposal' with urgency implying it's close, when it's likely Prop 1 of Round 4."},
+      "diversity": {"score": 50, "reason": "Good rhetoric."}
+    }
+  ]
+}
