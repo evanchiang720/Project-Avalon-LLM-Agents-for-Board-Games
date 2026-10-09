@@ -7,7 +7,7 @@
 
 > **Evaluation of Small Models Trained with Limited Data for *The Resistance: Avalon***  
 > **Advisor**: Prof. I-Chen Wu  
-> **Team**: Chia-Tung Chiang, Si-Kai Zhang
+> **Team**: Chia-Tung Chiang, Si-Kai Chang
 
 ---
 
